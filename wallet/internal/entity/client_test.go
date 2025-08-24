@@ -43,7 +43,7 @@ func TestUpdateClientWithInvalidArgs(t *testing.T) {
 }
 
 func TestAddAccountToClient(t *testing.T) {
-	client, _ := NewClient("John Doe", "j@j.com")
+	client, _ := NewClient("John", "j@j.com")
 	account := NewAccount(client)
 
 	err := client.AddAccount(account)
